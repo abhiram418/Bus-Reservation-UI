@@ -1,0 +1,24 @@
+<form class="card" [formGroup]="form">
+    <input type="number" placeholder="Bus Number" formControlName="busNumber">
+    <!-- <input type="text" placeholder="(AC/non-AC)"> -->
+    <select formControlName="non_or_ac">
+        <option value="AC">AC</option>
+        <option value="non-AC">non-AC</option>
+    </select>
+    <input type="number" placeholder="Price" formControlName="price">
+    <div class="outer">
+        <div class="left">
+            <input type="text" placeholder="From Place" formControlName="fromPlace">
+            <input type="text" placeholder="From Time" formControlName="fromTime">
+        </div>
+        <div class="right">
+            <input type="text" placeholder="To Place" formControlName="toPlace">
+            <input type="text" placeholder="To Time" formControlName="toTime">
+        </div>
+    </div>
+    <button (click)="check()">ADD</button>
+</form>
+<div *ngIf="added" class="card" id="temp">
+    <h1>👍</h1>
+    <h3>Bus: {{form.get("busNumber")?.value}} is Successfully added</h3>
+</div>

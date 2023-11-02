@@ -1,0 +1,18 @@
+<div class="outer" >
+    <div class="card" *ngFor="let ticket of bussesData;index as i" (click)="redirect(i)">
+        <div id="flex">
+            <h2># {{userBookings[i].bookingId}}</h2>
+            <div>
+                <h4>{{bussesData[i].fromPlace}}</h4>
+                <h6>{{bussesData[i].fromTime}}</h6>
+            </div>
+            <div>
+                <h4>→</h4>
+            </div>
+            <div>
+                <h4>{{bussesData[i].toPlace}}</h4>
+                <h6>{{bussesData[i].toTime}}</h6>
+            </div>
+        </div>
+    </div>
+</div>

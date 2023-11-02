@@ -1,0 +1,37 @@
+<div class="card" id="container">
+    <div>
+        <div id="pro">
+            <img [src]="profilePictureUrl" alt="Profile Picture" (click)="changePic()">
+        </div>
+        <div class="card" id="proChange" *ngIf="show">
+            <h3 (click)="choosePic(1)">Naruto</h3>
+            <h3 (click)="choosePic(2)">Jiraiya</h3>
+            <h3 (click)="choosePic(3)">Zoro</h3>
+        </div>
+    </div>
+    <h2>{{profile.userName}}</h2>
+    <hr>
+    <br>
+    <div class="card" (click)="Bookings(1)" id="o">
+        <h4>Profile</h4>
+        <div class="card" *ngIf="show1">
+            <p>
+                Name:    {{profile.userName}}
+                <br><br>
+                Phone:   {{profile.phNo}}
+                <br><br>
+                Gender:   {{profile.gender}}
+            </p>
+        </div>
+    </div>
+    <div class="card" (click)="Bookings(2)" id="opt">
+        <h4>Past Bookings</h4>
+    </div>
+    <div class="card" (click)="Bookings(3)" id="opt" *ngIf="admin">
+        <h4>Add Buses</h4>
+    </div>
+    <div class="card" (click)="Bookings(4)" id="opt">
+        <h4>Log-out</h4>
+        <div id="logoutPic"><img src="https://static.vecteezy.com/system/resources/thumbnails/006/184/737/small/logout-sign-out-icon-in-line-style-vector.jpg" alt="→"></div>
+    </div>
+</div>

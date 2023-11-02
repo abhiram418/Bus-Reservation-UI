@@ -1,0 +1,42 @@
+.card{
+    margin: 25px;
+    margin-left: 35%;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    width: fit-content;
+    height: fit-content;
+}
+.card button {
+    background-color: #0359b6;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.card button:hover {
+    background-color: #043e80;
+}
+#ticket{
+    display: flex;
+    justify-content: space-around;
+}
+#center{
+    text-align: center;
+}
+ul{
+    padding: 0px;
+}
+li{
+    list-style: none;
+    display: flex;
+}
+#pasengers{
+    margin-left: 70px;
+}
+li .card{
+    margin: 10px;
+}

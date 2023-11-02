@@ -1,0 +1,63 @@
+<div class="outer">
+    <div class="card">
+        <form [formGroup]="p">
+            <div *ngFor="let tempUser of getFormArray.controls;index as i" formArrayName="a">
+                <form [formGroupName]="i" [class.disable]="Visiblity[i]">
+                    <input type="text" formControlName="name">
+                    <input type="number" formControlName="age">
+                    <select id="gender" formControlName="gender">
+                        <option value="" >Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </form>
+            </div>
+        </form>
+        <button (click)="addPasenger()">Add Pasenger</button>
+        <button (click)="deletePasengers()">Delete Pasenger</button>
+    </div>
+    <div class="card" id="busDiv">
+        <div id="bus">
+            <div id="col" *ngFor="let seat of listNumber;index as i">
+                <div [class.disable]="view[((i*5)+1-1)]">
+                    <div [className]="select[(i*5)+1]" (click)="selected((i*5)+1)">
+                        {{(i*5)+1}}
+                    </div>
+                </div>
+                <div [class.disable]="view[((i*5)+2-1)]">
+                    <div [className]="select[(i*5)+2]" (click)="selected((i*5)+2)">
+                        {{(i*5)+2}}
+                    </div>
+                </div>
+                <div [class.disable]="view[((i*5)+3-1)]">
+                    <div [className]="select[(i*5)+3]" (click)="selected((i*5)+3)">
+                        {{(i*5)+3}}
+                    </div>
+                </div>
+                <br>
+                <div [class.disable]="view[((i*5)+4-1)]">
+                    <div [className]="select[(i*5)+4]" (click)="selected((i*5)+4)">
+                        {{(i*5)+4}}
+                    </div>
+                </div>
+                <div [class.disable]="view[((i*5)+5-1)]">
+                    <div [className]="select[(i*5)+5]" (click)="selected((i*5)+5)">
+                        {{(i*5)+5}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div id="right">
+            <input type="checkbox" name="right" (click)="check()" id="c" [(ngModel)]="ready[0]">
+            <label for="right">All the mentioned data is Correct</label>
+        </div>
+        <div class="card">
+            <input type="radio" name="pay" [(ngModel)]="ready[1]" value="ready">
+            <label for="pay">Proceed to Payment</label>
+            <button (click)="Proceed()">Pay</button>
+        </div>
+    </div>
+    
+</div>

@@ -1,0 +1,58 @@
+.card{
+    margin: 25px;
+    margin-left: 40%;
+    margin-top: 10%;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    width: 540px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.card button {
+    background-color: #0359b6;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.card button:hover {
+    background-color: #043e80;
+}
+.card input{
+    padding: 5px ;
+    font-size: 1.2rem;
+}
+select{
+    width: 35%;
+    height: 10%;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.outer{
+    display: flex;
+    justify-content: space-around;
+}
+.left{
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80px;
+}
+.right{
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#temp{
+    text-align: center;
+}

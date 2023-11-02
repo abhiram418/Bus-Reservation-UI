@@ -1,0 +1,23 @@
+<div class="card">
+    <img src="https://media.tenor.com/IY_nPuVFAiMAAAAC/one-loop-gif.gif">
+    <br>
+    <div id="ticket" >
+        <h3>{{busData.fromPlace}} <br> <h5>{{busData.fromTime}}</h5></h3>
+        <h3>→</h3>
+        <h3>{{busData.toPlace}} <br> <h5>{{busData.toTime}}</h5></h3>
+    </div>
+    <div id="pasengers" class="card">
+        <ul>
+            <li *ngFor="let paseng of pasengersList;index as i">
+                <div class="card">{{paseng.name}}</div>
+                <div class="card">{{paseng.age}}</div>
+                <div class="card">{{paseng.gender}}</div>
+                <div class="card">{{ticket.seatsReserved![i]}}</div>
+            </li>
+        </ul>
+    </div>
+    <div id="center">
+        <h1># {{ticketNo}}</h1>
+        <button (click)="back()">OK</button>
+    </div>
+</div>

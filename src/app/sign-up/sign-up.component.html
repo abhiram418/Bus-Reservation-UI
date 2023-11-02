@@ -1,0 +1,20 @@
+<!-- <p>Under Maintenance ... Sorry for inconvenience!</p>
+
+<button routerLink="/search">Temp redirect to Search</button>
+
+<router-outlet></router-outlet> -->
+
+<div id="outer" class="card">
+    <form [formGroup]="signupForm">
+        <input type="text" formControlName="userName" (blur)="checkUserName()" placeholder="Username" [class.error]="validUserName">
+        <input type="text" formControlName="password" placeholder="password">
+        <input type="text" formControlName="name" placeholder="Name">
+        <input type="number" formControlName="phNo" placeholder="Phone">
+        <select id="gender" formControlName="gender">
+            <option value="" >Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        <button (click)="check()">SingUp</button>
+    </form>
+</div>

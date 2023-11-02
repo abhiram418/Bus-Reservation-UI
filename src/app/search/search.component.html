@@ -1,0 +1,31 @@
+<div id="pro" class="card" (click)="red()">
+    <h3>Profile</h3>
+</div>
+<br>
+<form [formGroup]="search" (ngSubmit)="viewOptions()">
+    <div id="searchBack">
+        <div id="search" class="card">
+            <div class="container" (click)="activate(1)">
+                <input type="search" id="fplace" class="inp-x" (blur)="deActivate(1)" *ngIf="visible.fromVisible" formControlName="fromPlace">
+                <div class="inp">
+                    <h3  >{{search.get("fromPlace")?.value}}</h3>
+                </div>
+            </div>
+            <hr>
+            <div class="container" (click)="activate(2)"> 
+                <input type="text" id="tplace" class="inp-x" (blur)="deActivate(2)" *ngIf="visible.toVisible" formControlName="toPlace">
+                <div class="inp">
+                    <h3>{{search.get("toPlace")?.value}}</h3>
+                </div>
+            </div>
+            <hr>
+            <div class="container" (click)="activate(3)">
+                <input type="date" id="date" class="inp-x" (blur)="deActivate(3)" *ngIf="visible.dateVisible" formControlName="date">
+                <div class="inp">
+                    <h3>{{search.get("date")?.value}}</h3>
+                </div>
+            </div>
+            <button type="submit"><h2>Search</h2></button>
+        </div>
+    </div>
+</form>

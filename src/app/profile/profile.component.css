@@ -1,0 +1,80 @@
+.card{
+    text-align: center;
+    margin: 25px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.card button {
+    background-color: #0359b6;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.card button:hover {
+    background-color: #043e80;
+}
+#container{
+    /* background-color: #e6dcdc; */
+    background-color: #e6dcdc41;
+}
+h3{
+    padding-inline: 10px;
+}
+hr{
+    width: 35%;
+    border-style: double;
+}
+#pro{
+    width: 150px;
+    height: 100px;
+    margin-left: 46%;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 100%;
+}
+#proChange{
+    padding: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    margin-left: 44%;
+}
+#opt{
+    margin-inline: 450px;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+#logoutPic{
+    width: 45px;
+    height: 45px;
+}
+#opt h4{
+    margin: 0px;
+    margin-top: 15px;
+}
+#o{
+    margin-inline: 450px;
+    height: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    height: fit-content;
+    text-align: center;
+}

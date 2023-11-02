@@ -1,0 +1,36 @@
+<div class="Toolcard">
+    <h3 id="space">From: {{userSearchData.fromPlace}}</h3>
+    <h3>To: {{userSearchData.toPlace}}</h3>
+    <h3 >Date: {{userSearchData.date}}</h3>
+</div>
+<br>
+<div id="listDiv">
+    <ul id="list">
+        <ng-container *ngIf="bussesData">
+        <li *ngFor="let bus of bussesData;index as i">
+            <div id="listIteam" class="card">
+                <div class="box" id="icon">
+                    <img src="data:image/png;base64,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" alt="Bus">
+                </div>
+                <div class="box">
+                    <h3>{{bussesData[i].fromPlace}}</h3>
+                    <h4>{{bussesData[i].fromTime}}</h4>
+                </div>
+                <div class="box" id="arrow">
+                    →
+                </div>
+                <div class="box">
+                    <h3>{{bussesData[i].toPlace}}</h3>
+                    <h4>{{bussesData[i].toTime}}</h4>
+                </div>
+                <button (click)="showInfo(i)" id="view">View</button>
+            </div>
+            <div id="addInfo" *ngIf="infoView[i]">
+                <p>Type: {{bussesData[i].non_or_ac}}</p>
+                <p>Price: {{bussesData[i].price}}</p>
+                <button (click)="continue(i)" >Continue</button>
+            </div>
+        </li>
+    </ng-container>
+    </ul>
+</div>

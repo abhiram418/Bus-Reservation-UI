@@ -1,0 +1,75 @@
+.outer{
+    margin-top: 100px;
+}
+ul{
+    list-style: none;
+    padding: 0px;
+}
+.disable{
+    pointer-events: none;
+    opacity: 0.5;
+}
+button,input,select{
+    margin: 10px;
+    padding: 5px 10px;
+}
+.card{
+    margin: 25px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    width: fit-content;
+    height: fit-content;
+}
+.card button {
+    background-color: #0359b6;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.card button:hover {
+    background-color: #043e80;
+}
+#busDiv{
+    text-align: center;
+}
+#bus{
+    background-color: rgb(228, 224, 224);
+    display: flex;
+    width: 500px;
+    justify-content: right;
+}
+#col{
+    padding: 5px;
+}
+.box{
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 6px;
+    width: 30px;
+    height: 15px;
+}
+.box:hover{
+    background-color: yellow;
+}
+.box:focus{
+    background-color: #043e80;
+}
+.selectedBox{
+    margin: 10px;
+    background-color: green;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 6px;
+    width: 30px;
+    height: 15px;
+}
+#right{
+    margin-left: 25px;
+}
